@@ -5,7 +5,7 @@ import androidx.compose.material.ExperimentalMaterialApi
 import androidx.compose.material.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.navigation.compose.rememberNavController
-import com.arthur.android_template.ui.theme.TotalPlaytestTheme
+import com.arthur.android_template.ui.theme.AndroidTemplateTheme
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 
 @ExperimentalAnimationApi
@@ -13,11 +13,11 @@ import kotlinx.coroutines.ExperimentalCoroutinesApi
 @ExperimentalMaterialApi
 @Composable
 fun AndroidTemplateApp() {
-    TotalPlaytestTheme {
+    AndroidTemplateTheme {
         val navController = rememberNavController()
 
         Scaffold {
-            TMDBNavGraph(
+            AndroidTemplateNavGraph(
                 navController = navController
             )
         }
