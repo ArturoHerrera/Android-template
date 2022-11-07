@@ -21,7 +21,7 @@ object Destinations {
 @ExperimentalMaterialApi
 @ExperimentalCoroutinesApi
 @Composable
-fun TMDBNavGraph(
+fun AndroidTemplateNavGraph(
     navController: NavHostController = rememberNavController(),
     startDestination: String = Destinations.SPLASH_SCREEN
 ) {
