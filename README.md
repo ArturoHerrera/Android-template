@@ -4,7 +4,8 @@ Android template
 
 - MVVM
 - Retrofit client
-- Compose
+- Compose con uiStates
+- Corrutinas y flows
 - Repository pattern
 - Navgraph
 - Dagger Hilt
