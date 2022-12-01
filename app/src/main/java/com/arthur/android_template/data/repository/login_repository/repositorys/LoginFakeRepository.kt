@@ -1,5 +1,6 @@
 package com.arthur.android_template.data.repository.login_repository.repositorys
 
+import com.arthur.android_template.data.model.User
 import kotlinx.coroutines.flow.Flow
 
 class LoginFakeRepository(): LoginTasks {
@@ -12,6 +13,14 @@ class LoginFakeRepository(): LoginTasks {
     */
 
     override suspend fun checkUserSession(user: String, pass: String): Flow<Boolean> {
+        TODO("Not yet implemented")
+    }
+
+    override suspend fun getUser(): User? {
+        TODO("Not yet implemented")
+    }
+
+    override suspend fun deleteUser() {
         TODO("Not yet implemented")
     }
 }

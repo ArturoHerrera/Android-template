@@ -1,5 +1,6 @@
 package com.arthur.android_template.data.repository.login_repository.repositorys
 
+import com.arthur.android_template.data.model.User
 import kotlinx.coroutines.flow.Flow
 
 interface LoginTasks {
@@ -15,5 +16,9 @@ interface LoginTasks {
         user: String,
         pass: String
     ): Flow<Boolean>
+
+    suspend fun getUser(): User?
+
+    suspend fun deleteUser()
 
 }
