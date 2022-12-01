@@ -5,7 +5,8 @@ import android.content.Context
 import androidx.annotation.NonNull
 import com.arthur.android_template.BuildConfig
 import com.arthur.android_template.MyApplication
-import com.arthur.android_template.utils.AppPreferences
+import com.arthur.android_template.core.AppDatabase
+import com.arthur.android_template.core.AppPreferences
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import com.localebro.okhttpprofiler.OkHttpProfilerInterceptor
@@ -50,5 +51,11 @@ object AppModule {
     @Provides
     fun providesPreferences(customApplication: Application): AppPreferences {
         return AppPreferences(customApplication)
+    }
+
+    @Singleton
+    @Provides
+    fun providesDatabase(@ApplicationContext context: Context): AppDatabase {
+        return AppDatabase.invoke(context)
     }
 }

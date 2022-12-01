@@ -1,4 +1,4 @@
-package com.arthur.android_template.utils
+package com.arthur.android_template.core
 
 import android.app.Application
 import android.content.Context
