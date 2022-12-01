@@ -9,6 +9,7 @@ Android template
 - Repository pattern
 - Navgraph
 - Dagger Hilt
+- Room
 
 
 Ref:
